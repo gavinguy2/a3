@@ -8,8 +8,8 @@
     
    
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-   grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1f  ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 0fr 0fr 2fr 2fr 2fr 1fr  ;
     min-height: 100vh;
 
 
@@ -34,6 +34,7 @@ body {
 header {
     grid-column-start: span 4;
     grid-row-start: span 1;
+    padding-bottom: 10px;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav {
 
 img {
     grid-column-start: span 1;
-    grid-row-start: span 10;
+    grid-row-start: span 3;
     padding-top: 30px;
     padding-right: 30px;
     max-width: 100%;
@@ -52,12 +53,12 @@ img {
 
 main{
     grid-column-start: span 2;
-    grid-row-start: span 10;
+    grid-row-start: span 3;
 }
 
 footer{
     grid-column-start: span 4;
-    grid-row-start: -1/10;
+    grid-row-start: span 1;
     align-self: end;
 }
 
