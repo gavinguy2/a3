@@ -3,22 +3,62 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+#wrapper{
+    
+   
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+   grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1f  ;
+    min-height: 100vh;
+
+
+}
 body {
 	padding-left: 30px;
 	padding-right: 30px;
 	background-image: url("photos/double-bubble-outline.png");
-	padding-top: 30px;
-
+	
+    
 }
 #my-title {
+    
 	font-family: "Playfair Display";
 	font-size: 40px;
-	
 	top: 0;
 	width: 100%;
-	padding-bottom: 10px;
+    padding-top: 20px;
+	
+}
 
+header {
+    grid-column-start: span 4;
+    grid-row-start: span 1;
+}
 
+nav {
+    grid-column-start: span 4;
+    grid-row-start: span 1;
+}
+
+img {
+    grid-column-start: span 1;
+    grid-row-start: span 10;
+    padding-top: 30px;
+    padding-right: 30px;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+main{
+    grid-column-start: span 2;
+    grid-row-start: span 10;
+}
+
+footer{
+    grid-column-start: span 4;
+    grid-row-start: -1/10;
+    align-self: end;
 }
 
 footer {
@@ -28,7 +68,7 @@ footer {
 	padding-top: 15px;
 	font-style: italic;
 	border-top: double;
-	position: fixed;
+	
 	width: 100%;
 
 }
@@ -42,11 +82,7 @@ a:hover {
 	color: black;
 }
 img{
-	float: left;
-	padding-right: 50px;
-	width: 25%;
-	height: 25%;
-	padding-top: 25px;
+	
 
 
 }
@@ -61,12 +97,7 @@ img{
 	
 }
 
-#wrapper{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 
 nav a {
 	color: white;
@@ -204,14 +235,16 @@ nav ul li ul li ul {
 }
 
 img{
-	float: unset; ;
-	padding-right: 0px;
-	width: 100%;
-	height: 100%;
-	padding-top: 25px;
+	    grid-column-start: span 4;
+        padding-right: unset;
 
 
 }
+    main {
+            grid-column-start: span 4;
+
+    }
+    
 
 #main_text {
 	font-size: 30px;
