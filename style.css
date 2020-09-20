@@ -233,17 +233,34 @@ nav ul li ul li ul {
   	
   	position: relative;
   	left: 0%
+
 }
 
+#wrapper{
+    
+   
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: auto;
+}
+
+nav{
+	grid-row-start: span 1;
+}
 img{
 	    grid-column-start: span 4;
+	    grid-row-start: span 1;
         padding-right: unset;
 
 
 }
     main {
             grid-column-start: span 4;
+            grid-row-start: span 1;
 
+    }
+    footer{
+    	grid-row-start: span 1;
     }
     
 
